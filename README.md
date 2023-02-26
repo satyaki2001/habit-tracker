@@ -1,6 +1,6 @@
 # Habit Tracker Application
 
-hosted link: 
+hosted link: https://bolt-habit-tracker.netlify.app/
 
 ## Description
 The habit tracker application helps user to add habits, track progress on each habit and manage the habits
