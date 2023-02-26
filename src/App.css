@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #000000;
+  --secondary: hsl(278, 88%, 20%);
+  --habit-shadow: hsl(278, 88%, 80%);
+  --add-btn: #700B97;
+  --delete-btn: #C02739;
+}
+
+.navbar-brand{
+  color: #cb6e59;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.home-brand{
+  color: #cb6e59;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 40px;
+text-align: center;
+margin-top: 25vh;
+}
+
+.home-intro{
+  text-align: center;
+  width: 120px;
+  color: rgb(137, 132, 125);
+  margin: auto;
+  font-size: 20px;
+  font-family: 'Shantell Sans', cursive;
+  margin-top: 4vh;
+}
+
+.home-habit-route{
+text-align: center;
+margin-top: 7vh;
+
+}
+
+.home-habit-link{
+  font-size: 30px;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 2px;
+  background-color: #cb6e59;
+  color: aliceblue;
+  transition: 0.2s;
+
+}
+
+.home-habit-link:hover{
+font-size: 32px;
+text-shadow: 1px 1px;
+}
+
+.navbar-brand:hover{
+  color: #da4c2c;
+}
+
+.nav-link{
+  color: aliceblue;
+}
+
+.main-container {
+  width: 1000px;
+  background-color: rgba(224, 215, 215, 0.2);
+  position: relative;
+  inset: 0;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 50px;
+
+}
+
+.habits-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.habit-adding {
+  height: 150px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: default !important;
+}
+
+.input-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(238, 112, 49);
+  height: 35px;
+  width: 35px;
+  font-size: 1.2rem;
+  color: hsl(0deg 0% 100%);
+  box-sizing: border-box;
+  border-radius: 6px 0 0 6px;
+  cursor: default;
+}
+
+
+
+.habit-adding input {
+  width: 500px;
+  height: 35px;
+  outline: none;
+  border: none;
+  margin: 5px 0;
+  padding: 0 0 0 10px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border-radius: 0 20px 20px 0;
+}
+
+.habit-adding button {
+  align-self: flex-end;
+  margin: 10px 0 0 0;
+  outline: none;
+  border: none;
+  width: 90px;
+  height: 30px;
+  cursor: pointer;
+  background-color:#cb6e59;
+  color: white;
+  font-size: 1rem;
+  box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.usage-description{
+  color:aliceblue;
+  font-family: 'Shantell Sans', cursive;
+}
+
+.list-of-habits {
+  background-color:#a75a1c;
+  color: white;
+  border-radius: 10px;
+/*   width: 98%; */
+  margin: 10px;
+  padding: 10px 20px;
+  box-shadow: 0 0 7px var(--habit-shadow);
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction:column;
+}
+
+.habit-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.habit-description {
+  color: rgb(198, 198, 198);
+  font-size: 0.8rem;
+}
+
+/* .habit-details {
+  width: 200px;
+} */
+
+
+.seven-days-of-week table {
+  border-collapse: collapse;
+  width: 100%;
+  /* overflow-x: scroll; */
+}
+
+.seven-days-of-week th,
+td {
+  height: 30px;
+  /* width: 100px; */
+  border: 1px solid rgb(120, 120, 120);
+  text-align: center;
+}
+
+.seven-days-of-week th {
+  width: 100px;
+}
+
+.seven-days-of-week td {
+  width: 100px;
+}
+
+.seven-days-of-week td .done {
+  color: hsl(120deg 100% 39%);
+  box-shadow: 0 0 10px 2px;
+  border-radius: 50%;
+}
+
+.seven-days-of-week td .fail {
+  color: red;
+  box-shadow: 0 0 8px;
+  border-radius: 50%;
+}
+
+.seven-days-of-week td {
+  cursor: pointer;
+}
+
+.seven-days-of-week {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 90px;
+  width: 700px;
+  align-self: flex-end;
+}
+
+.delete-btn {
+  height: 35px;
+  background: var(--delete-btn);
+  width: 35px;
+  border-radius: 0 10px 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 7px;
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+
+@media screen and (max-width: 750px){
+.main-container{
+  width: max-content;
+
+}
+
+.habit-adding input{
+  width: 70vw;
+}
+.seven-days-of-week {
+width: 70vw
+}
+
+.seven-days-of-week th {
+font-size: 10px;
+}
+
+.table{
+  width: 20vw;
+}
+
+}
+
+
+@media screen and (max-width: 425px) {
+  .seven-days-of-week th {
+    font-size: 6px;
+    }
+
+    .table{
+      width: 15vw;
+    }
+}
