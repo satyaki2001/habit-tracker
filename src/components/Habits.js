@@ -106,9 +106,9 @@ function Habits({ habitName, habitDiscription, habitStatus, habitId }) {
 									key={index}
 									onClick={updateCompleteStatus}
 									data-date={habitStatus[index].date}>
-									{/* displaying the none, done or not done icon accoring to the state */}
+									{/* displaying the none, done or not done icon according to the state */}
 									{habitStatus[index].status === "none" ? (
-										<i className="fa-regular fa-circle"></i>
+									<i className="fa-regular fa-circle"></i>
 									) : habitStatus[index].status === "done" ? (
 										<i className="fa-solid fa-circle-check done"></i>
 									) : (
@@ -122,7 +122,8 @@ function Habits({ habitName, habitDiscription, habitStatus, habitId }) {
 			</div>
 			{/* Delete button for deleting a habit */}
 			{/* dispatching deleteHabit reducer with habitId as payload so that the selected habit can be deleted */}
-			<div onClick={() => dispatch(deleteHabit(habitId))} className="delete-btn">
+			<div onClick={() =>
+			 dispatch(deleteHabit(habitId))} className="delete-btn">
 				<i className="fa-solid fa-trash"></i>
 			</div>
 			<ToastContainer

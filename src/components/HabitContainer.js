@@ -19,7 +19,7 @@ function HabitContainer() {
 	const addYourHabitOnClick = () => {
 		if (habit === "") {
 			// alert("Please fill both input fields and then add the habit");
-			toast.error("Please fill both input fields and then add the habit", {
+			toast.error("Please fill the habit field and then click Add habit", {
 				position: "top-right",
 				autoClose: 8000,
 				hideProgressBar: false,
@@ -158,7 +158,7 @@ function HabitContainer() {
 							value={habit}
 							type="text"
 							placeholder="Enter the name of habit"
-							maxlength="30"
+							maxlength="20"
 							required
 						/>
 					</div>
@@ -170,7 +170,7 @@ function HabitContainer() {
 							onChange={(e) => setDescription(e.target.value)}
 							value={description}
 							type="text"
-							placeholder="Write the discription of the habit (optional)"
+							placeholder="Describe the habit (optional)"
 							maxlength="30"
 							
 						/>

@@ -101,6 +101,7 @@ text-shadow: 1px 1px;
   align-items: center;
   box-sizing: border-box;
   border-radius: 25px;
+  text-align: center;
 }
 
 .icon-container {
@@ -175,9 +176,9 @@ text-shadow: 1px 1px;
   font-size: 0.8rem;
 }
 
-/* .habit-details {
-  width: 200px;
-} */
+.habit-details {
+text-align: center;
+} 
 
 
 .seven-days-of-week table {
@@ -239,6 +240,7 @@ td {
   position:absolute;
   top:0;
   right:0;
+  cursor: pointer;
 }
 
 
