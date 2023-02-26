@@ -108,11 +108,11 @@ function Habits({ habitName, habitDiscription, habitStatus, habitId }) {
 									data-date={habitStatus[index].date}>
 									{/* displaying the none, done or not done icon according to the state */}
 									{habitStatus[index].status === "none" ? (
-									<i className="fa-regular fa-circle"></i>
+									<i className="status fa-regular fa-circle"></i>
 									) : habitStatus[index].status === "done" ? (
-										<i className="fa-solid fa-circle-check done"></i>
+										<i className=" status fa-solid fa-circle-check done"></i>
 									) : (
-										<i className="fa-solid fa-circle-xmark fail"></i>
+										<i className="status fa-solid fa-circle-xmark fail"></i>
 									)}
 								</td>
 							))}

@@ -228,6 +228,10 @@ td {
   align-self: flex-end;
 }
 
+.status{
+  pointer-events: none;
+}
+
 .delete-btn {
   height: 35px;
   background: var(--delete-btn);
