@@ -6,7 +6,7 @@ hosted link: https://bolt-habit-tracker.netlify.app/
 The habit tracker application helps user to add habits, track progress on each habit and manage the habits
 
 ## Design
-The final design of the web application will have a client side and server side. In the current design only client side is developed. As a result data is stored in a database for a user. However it will be stored in the browser's local storage using redux.  
+The final design of the web application will have a client side and server side. In the current design only client side is developed. As a result data is not stored in a database for a user. However it will be stored in the browser's local storage using redux.  
 
 ## Implementation
  
